@@ -1,4 +1,7 @@
-const { Passport } = require('../');
+const expect = require('chai').expect;
+
+const { Passport, AccessForbiddenError } = require('../');
+const { PERMISSIONS } = require('../types');
 
 describe('Passport', () => {
   describe('check', () => {
